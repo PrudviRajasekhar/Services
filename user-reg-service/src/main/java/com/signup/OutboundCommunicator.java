@@ -16,7 +16,7 @@ import com.signup.model.User;
 import lombok.extern.slf4j.Slf4j;
 
 /**
- * @author nsanda
+ * @author Raja
  *
  */
 @Service
@@ -41,7 +41,7 @@ public class OutboundCommunicator {
 		
 		HttpEntity<String> request = new HttpEntity<>(userModelJson, headers);
 		
-		String authoResp = rt.postForObject("https://dev-3s3dknax.auth0.com/dbconnections/signup",
+		String authoResp = rt.postForObject("https://dev-nhhisciv.us.auth0.com//dbconnections/signup",
 				request, String.class);
 		
 		
